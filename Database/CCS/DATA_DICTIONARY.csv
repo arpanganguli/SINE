@@ -1,0 +1,26 @@
+Column,Data Type,Description,Example (if required)
+Serial No,INT,,
+Round No.,INT,,
+Period,MM-YY,,
+City,TEXT,,
+Age,RANGE (INT),,
+Gender,BOOLEAN,,Male/Female
+Occupation of Respondent,TEXT,,
+Annual Income,CATEGORICAL,,"Rs.1-3 lakhs, etc."
+No. of Family Members,CATEGORICAL,,"3 or 4, 5 and more, etc."
+Education Qualification,CATEGORICAL,,"Below gradute, Up to primary, etc."
+Number Of Earning Members,INT,,
+Perception on General Economic Condition Ð compared to one year ago,CATEGORICAL,,"Remained the same, Improved, etc."
+Outlook on General Economic Condition Ð one year ahead,CATEGORICAL,,"Will remain the same, Improve, etc."
+Perception on Household Circumstances Ð compared to one year ago,CATEGORICAL,,"Somewhat worse off, Somewhat better off, etc."
+Outlook on Household Circumstances Ð one year ahead,CATEGORICAL,,"Will remain the same, Will be better off, etc."
+Perception on Household Income Ð compared to one year ago,CATEGORICAL,,"Decreased, Increased, etc."
+Outlook on Household Income Ð one year ahead,CATEGORICAL,,"Decrease, Increase, etc."
+Perception on Household Spending Ð compared to one year ago,CATEGORICAL,,"Decreased, Increased, etc."
+Outlook on Household Spending Ð one year ahead,CATEGORICAL,,"Decrease, Increase, etc."
+Perception on Employment Scenario Ð compared to one year ago,CATEGORICAL,,"Worsen, Improved, etc."
+Outlook on Employment Scenario Ð one year ahead,CATEGORICAL,,"Will worsen, Will improve, etc."
+Perception on General Price Levels Ð compared to one year ago,CATEGORICAL,,"Gone up, Remain almost unchanged, etc."
+Outlook on General Price Levels Ð one year ahead,CATEGORICAL,,"Will go up, Will go down, etc."
+Perception on Inflation Ð compared to one year ago,CATEGORICAL,,"More than last year, Less than last year, etc."
+Outlook on Inflation Ð one year ahead,CATEGORICAL,,"More than current year, Less than current year, etc."
