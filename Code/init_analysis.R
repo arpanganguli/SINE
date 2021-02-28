@@ -5,3 +5,5 @@ sqlite.driver <- dbDriver("SQLite")
 db <- dbConnect(sqlite.driver, dbname=filename)
 dbListTables(db)
 myTable <- dbReadTable(db, "CCS")
+
+View(myTable)
