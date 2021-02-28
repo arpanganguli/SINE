@@ -46,6 +46,8 @@ CCS = Table(
 
 meta.create_all(engine)
 
+# append all Excel files into one large database
+
 root = r'/Users/arpanganguli/Documents/Professional/Projects/SINE/Database/CCS'
 
 url = []

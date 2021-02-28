@@ -59,3 +59,7 @@ fig.tight_layout()
 fig.subplots_adjust(top=0.75, bottom=-0.2)
 plt.show()
 
+# export figures
+
+plt.savefig("/Users/arpanganguli/Documents/Professional/Projects/SINE/Plots/Macroeconomic Indicators at constant prices 2011-12.png"
+
