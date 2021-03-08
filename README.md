@@ -1,7 +1,9 @@
 # SINE (Snapshot of INdian Economy)
 **Status:** Work in Progress
 
-**Objective:** This projects attempts to answer the question **Can consumer sentiments forecast the economy?** I do this by analysing the results of Consumer Confidence Survey (CCS) and Inflation Expectations Survey of Households (IESH) conducted quarterly by the Reserve Bank of India (RBI) with regards to their predictability of Gross Domestic Product (GDP) of India.
+**Objective:** This projects attempts to answer the question **Can consumer sentiments forecast the economy?**
+
+I do this by analysing the results of Consumer Confidence Survey (CCS) and Inflation Expectations Survey of Households (IESH) conducted quarterly by the Reserve Bank of India (RBI) with regards to their predictability of Gross Domestic Product (GDP) of India.
 
 Depending on the outcome of the project, I would be interested in exploring how the results could be generalised for any economy. If you are interested to learn more/collaborate, please [email me](mailto:arpan@alumni.lse.ac.uk).
 
