@@ -7,8 +7,6 @@ I do this by analysing the results of Consumer Confidence Survey (CCS) and Infla
 
 Depending on the outcome of the project, I would be interested in exploring how the results could be generalised for any economy. If you are interested to learn more/collaborate, please [email me](mailto:arpan@alumni.lse.ac.uk).
 
-**Source:** [Handbook of Statistics of Indian Economy](https://dbie.rbi.org.in/DBIE/dbie.rbi?site=publications#!2) published by the Reserve Bank of India (Last accessed on 15 Jan 2021).
-
 **About the data:**
 
 **Consumer Confidence Survey (CCS)**
@@ -30,4 +28,6 @@ The Reserve Bank of India (RBI) has been conducting the Inflation Expectations S
 
 **Disclaimer**
 1. Responses of households on price and inflation may be based on their own consumption baskets.
-2. Households’ assessments are subjective, guided by their own understanding of the subject, and may lack internal consistency.
+2. Households’ assessments are subjective, guided by their own understanding of the subject, and may lack internal consistency
+
+**Source:** [Handbook of Statistics of Indian Economy](https://dbie.rbi.org.in/DBIE/dbie.rbi?site=publications#!2) published by the Reserve Bank of India (Last accessed on 15 Jan 2021).
