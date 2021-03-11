@@ -12,5 +12,6 @@ p <- ggplot(data = df, aes(x=Year, y=Gross.Domestic.Product)) +
             geom_bar(stat = "identity", fill = "darkblue") +
             theme_minimal() +
             theme(axis.text.x = element_text(face = "bold", color = "#993333", 
-                                     size = 12, angle = 45))
+                                     size = 12, angle = 45)) +
+            labs(title = "Gross Domestic Product \n in Constant Prices (2011)", x = "Year", y = "Gross Domestic Product")
 ggplotly(p)
