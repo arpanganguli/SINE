@@ -13,5 +13,5 @@ p <- ggplot(data = df, aes(x=Year, y=Gross.Domestic.Product)) +
             theme_minimal() +
             theme(axis.text.x = element_text(face = "bold", color = "#993333", 
                                      size = 12, angle = 45)) +
-            labs(title = "Gross Domestic Product \n in Constant Prices (2011)", x = "Year", y = "Gross Domestic Product")
+            labs(title = "Gross Domestic Product (at constant prices) \n Base year: 2011-12", x = "Year", y = "Gross Domestic Product")
 ggplotly(p)
