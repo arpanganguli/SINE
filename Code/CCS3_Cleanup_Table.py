@@ -70,6 +70,12 @@ df_working[["Age"
             ,"Outlook on Inflation - one year ahead"]].astype('category')
 print(df_working.dtypes) # checking if the data types have changed to category
 
+# delete null and na values
+print(df_working.info())
+df_working.dropna(how="all")
+print(df_working.info())
+
+
 df_working[["Age"
             ,"Gender"
             ,"Annual Income"
