@@ -78,6 +78,17 @@ df_working[["Age"
             ,"Gender"
             ,"Annual Income"
             ,"Educational Qualification"
+            ,"No. of Family Members"]] = df_working[["Age"
+            ,"Gender"
+            ,"Annual Income"
+            ,"Educational Qualification"
+            ,"No. of Family Members"]].apply(lambda x: x.cat.codes)
+
+"""
+df_working[["Age"
+            ,"Gender"
+            ,"Annual Income"
+            ,"Educational Qualification"
             ,"No. of Family Members"
             ,"Perception on General Economic condition - compared to one year ago"
             ,"Outlook on General Economic condition - one year ahead"
@@ -116,8 +127,6 @@ df_working[["Age"
             ,"Perception on Inflation - compared to one year ago"                   
             ,"Outlook on Inflation - one year ahead"]].apply(lambda x: x.cat.codes)
                                                                      
-print(df_working.head())
-
 df_working.drop(df_working[df_working[["Age"
                                       ,"Gender"
                                       ,"Annual Income"
@@ -140,5 +149,8 @@ df_working.drop(df_working[df_working[["Age"
                                       ,"Perception on Inflation - compared to one year ago"                   
                                       ,"Outlook on Inflation - one year ahead"]] == -1].index, inplace=True)
 
-print(df_working.head())
+
+df_working.drop(df_working[df_working[["Age", "Gender"]] == -1].index, inplace=True)
+"""
+
 
