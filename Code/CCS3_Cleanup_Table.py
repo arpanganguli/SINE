@@ -140,3 +140,5 @@ df_working.drop(df_working[df_working[["Age"
                                       ,"Perception on Inflation - compared to one year ago"                   
                                       ,"Outlook on Inflation - one year ahead"]] == -1].index, inplace=True)
 
+print(df_working.head())
+
