@@ -7,7 +7,6 @@ Created on Tue Apr 20 18:50:34 2021
 """
 
 # import packages
-import sqlalchemy as sa
 import pandas as pd
 from sqlalchemy import create_engine
 import os
@@ -22,12 +21,10 @@ engine = create_engine(URL, echo = True) # sqlite:////absolute/path/to/file.db
 # initial query
 query_string = "SELECT * FROM CCS"
 df = pd.read_sql(sql=query_string, con=engine)
-
 print(df.head())
 
-df_working = df.copy(deep=True)
+df_working = df.copy(deep=True) # deep copy to preserve original dataframe
 print(df_working.head())
-
 print(df_working.dtypes) # checking the data types of all columns
 
 df_working[["Age"
@@ -71,7 +68,6 @@ df_working[["Age"
             ,"Outlook on General prices - one year ahead"                          
             ,"Perception on Inflation - compared to one year ago"                   
             ,"Outlook on Inflation - one year ahead"]].astype('category')
-
 print(df_working.dtypes) # checking if the data types have changed to category
 
 df_working[["Age"
@@ -83,6 +79,7 @@ df_working[["Age"
             ,"Annual Income"
             ,"Educational Qualification"
             ,"No. of Family Members"]].apply(lambda x: x.cat.codes)
+print(df_working.head())
 
 """
 df_working[["Age"
