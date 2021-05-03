@@ -10,8 +10,6 @@ Created on Tue Apr 20 18:50:34 2021
 import pandas as pd
 from sqlalchemy import create_engine
 import os
-# from keras.utils import to_categorical
-# from sklearn.preprocessing import OneHotEncoder
 
 # import files
 HOME = os.path.dirname(os.getcwd())
@@ -72,33 +70,13 @@ df_working[["Age"
             ,"Outlook on General prices - one year ahead"                          
             ,"Perception on Inflation - compared to one year ago"                   
             ,"Outlook on Inflation - one year ahead"]].astype('category')
+df_working[["Age"
+            ,"Gender"
+            ,"Annual Income"
+            ,"Educational Qualification"
+            ,"No. of Family Members"]] = df_working[["Age"
+            ,"Gender"
+            ,"Annual Income"
+            ,"Educational Qualification"
+            ,"No. of Family Members"]].apply(lambda x: x.cat.codes)
 print(df_working.head())
-
-# convert all categorial variables to code
-df_cat = df_working
-
-df_cat = df_cat[["Age"
-       ,"Gender"
-       ,"Annual Income"
-       ,"Educational Qualification"
-       ,"No. of Family Members"
-       ,"Occupation of Respondent"
-       ,"Perception on General Economic condition - compared to one year ago"
-       ,"Outlook on General Economic condition - one year ahead"
-       ,"Perception on Household income - compared to one year ago"
-       ,"Outlook on Household income - one year ahead"
-       ,"Perception on Household spending - compared to one year ago"
-       ,"Outlook on Household spending - one year ahead"                    
-       ,"Perception on essential spending - compared to one year ago"       
-       ,"Outlook on essential spending - one year ahead"                   
-       ,"Perception on non-essential spending - compared to one year ago"    
-       ,"Outlook on non-essential spending - one year ahead"                   
-       ,"Perception on Employment scenario - compared to one year ago"    
-       ,"Outlook on Employment scenario - one year ahead"                   
-       ,"Perception on General prices - compared to one year ago"               
-       ,"Outlook on General prices - one year ahead"                          
-       ,"Perception on Inflation - compared to one year ago"                   
-       ,"Outlook on Inflation - one year ahead"]].apply(lambda x: x.cat.codes)
-print(df_cat.head())
-
-# use one-hot encoding
