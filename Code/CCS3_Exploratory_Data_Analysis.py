@@ -26,9 +26,16 @@ query_string = "SELECT * FROM CCS"
 df = pd.read_sql(sql=query_string, con=engine)
 print(df.head())
 
-# barplot = city
-g = sns.catplot(
-    data=df, kind="bar",
-    x="Round", y="City", hue="City",
-    ci="sd", palette="dark", alpha=.6, height=6
-)
+# barplot - 'Perception on Inflation - compared to one year ago'
+# sns.set_style("dark")
+# sns.countplot(x=df["Round"], hue=df["City"])
+# plt.xticks(rotation=90)
+# plt.legend(loc="lower left")
+
+for i in df.columns[12:]:
+    fig = plt.figure()
+    sns.set_style("dark")
+    sns.countplot(x=df["Round"], hue=df[i])
+    plt.xticks(rotation=90, label="round")
+    plt.title(i)
+    fig.savefig(HOME+"/Plots/"+i+".png")
