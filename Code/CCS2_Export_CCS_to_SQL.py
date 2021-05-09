@@ -1,5 +1,4 @@
 # import packages
-
 import pandas as pd
 import sqlalchemy as sa
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, Float, NVARCHAR, DateTime
@@ -7,9 +6,7 @@ import os
 import glob
 
 # create SQL database
-
 engine = create_engine('sqlite:////Users/arpanganguli/Documents/Professional/Projects/SINE/Database/CCS.db', echo = True) # sqlite:////absolute/path/to/file.db
-
 meta = MetaData()
 
 CCS = Table(
@@ -47,10 +44,9 @@ CCS = Table(
 meta.create_all(engine)
 
 # append all Excel files into one large database
-
 root = r'/Users/arpanganguli/Documents/Professional/Projects/SINE/Database/CCS'
-
 url = []
+
 for root, dirs, files in os.walk(root):
     url += glob.glob(os.path.join(root, '*.xlsx'))
     
